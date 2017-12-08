@@ -1,0 +1,15 @@
+function luckySevens(inputArray){
+	var x = 7;
+	for(i=0;i<=inputArray.length;i++){
+   if ((inputArray[i]+inputArray[i+1]+inputArray[i+2]) == x){
+   console.log(true)
+   return;
+   } else{
+   	console.log(false);
+       }
+	}	
+}
+
+var y = [2,1,5,1,0];
+var z = [0,-2,1,8];
+luckySevens(z);
