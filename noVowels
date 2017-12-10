@@ -1,0 +1,20 @@
+function disemvowel(inputString){
+var vowels =["a","e","i","o","u"];
+
+  for (i=0; i <= vowels.length;i++) {
+	var secondLoop = inputString.length;
+    for(j=0;j<=secondLoop;j++){
+            if(vowels[i] === inputString.charAt(j)){
+          inputString = inputString.slice(0, j).concat(inputString.slice(j + 1, secondLoop));
+                j--; // take the removed character into account
+                secondLoop--;  // string is now one character shorter
+                           }
+                	 }
+                }
+                
+                // inputString.character();
+				console.log(inputString);
+            }
+
+var x = "foobar";
+disemvowel(x);
